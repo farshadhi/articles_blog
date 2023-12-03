@@ -1,0 +1,23 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    <title>Document</title>
+</head>
+<body>
+    <h1 class="article-header">Here your latest articles:</h1>
+    <ul>
+        {% for article in articles %}
+            <li class="article-title"><a href="#">{{article.title}}</a>
+            <p>{{article.snippet}}</p> <hr>
+            </li>
+        {% empty %}
+            <h2>No articles</h2>
+        {% endfor %}
+    </ul>
+</body>
+</html>

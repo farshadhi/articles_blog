@@ -1,0 +1,23 @@
+
+
+.article-header {
+    font-size: 3rem;
+    margin: 2rem auto;
+    text-align: center;
+}
+
+.article-title {
+    list-style-type: none;
+    margin-bottom: 1rem;
+}
+
+.article-title a {
+    text-decoration: none;
+    color: darkblue;
+    font-size: 2rem;
+}
+
+.article-title p {
+    color: gray;
+    font-size: 1.5rem;
+}
